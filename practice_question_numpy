@@ -1,0 +1,34 @@
+#q1=create an array using numpy
+import numpy as np
+a=np.array([1,2,3,4,5,6,7])
+print(a)
+
+#Q2 create an array of 10 random integers
+import random
+b=np.random.randint(10)
+print(b)
+
+#q3create an array elements from 10 to 20
+a=np.arange(10,21)
+print(a)
+
+#q4 create an array which contains value 5 10 times
+a=np.full(10,5)
+print(a)
+
+#q create 1 d array and convert into 3*3 matrix
+a=np.array([1,2,3,4,5,6,7,8,9])
+b=a.reshape(3,3)
+print(b)
+
+#q create 2d array of size 3*3 but all elemnts should be 0 to 1
+n=np.random.rand(3,3)
+print(n)
+
+#q concatenate 2d array horizontally and vertically
+a=np.arange(1,5).reshape(2,2)
+b=np.arange(5,9).reshape(2,2)
+h=np.hstack((a,b))
+v=np.vstack((a,b))
+print(h)
+print(v)
